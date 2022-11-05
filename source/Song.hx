@@ -3,7 +3,7 @@ package;
 import Section.SwagSection;
 import haxe.Json;
 import haxe.format.JsonParser;
-import lime.utils.Assets;
+import lime.utils.Assets as OpenFlAssets;
 
 #if sys
 import sys.io.File;
