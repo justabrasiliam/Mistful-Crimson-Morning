@@ -818,7 +818,8 @@ class PlayState extends MusicBeatState
 		{
 			if(FileSystem.exists(folder))
 			{
-				for (file in list.filter(text -> text.contains(folder))
+				for (file in list.filter(text -> text.contains(folder)))
+					
 				{
 					if(file.endsWith('.lua') && !filesPushed.contains(file))
 					{
@@ -1172,7 +1173,7 @@ class PlayState extends MusicBeatState
 		{
 			if(FileSystem.exists(folder))
 			{
-				for (file in list.filter(text -> text.contains(folder))
+				for (file in list.filter(text -> text.contains(folder)))
 				{
 					if(file.endsWith('.lua') && !filesPushed.contains(file))
 					{
