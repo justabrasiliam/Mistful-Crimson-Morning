@@ -171,10 +171,10 @@ class WeekData {
 					}
 				}
 
-				for (file in FileSystem.readDirectory(directory))
+				for (file in list.filter(text -> text.contains(directory)))
 				{
 					var path = haxe.io.Path.join([directory, file]);
-					if (list.filter(text -> text.contains(path) && file.endsWith('.json'))
+					if (list.filter(text -> text.contains(path) && file.endsWith('.json')))
 					{
 						addWeek(file.substr(0, file.length - 5), path, directories[i], i, originalLength);
 					}
