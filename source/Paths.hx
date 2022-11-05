@@ -453,7 +453,7 @@ class Paths
 			for (list.filter(text -> text.contains(modsFolder))) {
 				var path = haxe.io.Path.join([modsFolder, folder]);
 				var list = Assets.list();
-				if (list.filter(list.filter(text -> text.contains(path) && !ignoreModFolders.contains(folder) && !list.contains(folder))) {
+				if (list.filter(text -> text.contains(path) && !ignoreModFolders.contains(folder) && !list.contains(folder))) {
 					list.push(folder);
 				}
 			}
